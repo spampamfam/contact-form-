@@ -111,7 +111,8 @@ container.addEventListener("submit", (e) => {
       const radioArr = Array.from(item.element);
       const isChecked = radioArr.some((radio) => radio.checked);
       if (!isChecked) {
-        showError(queryContainer, item.errorEl, 2);
+        item.errorEl.textContent = `${mesg[2].msg}`;
+        item.errorEl.classList.toggle("hidden", false);
         formIsValid.push(false);
       } else {
         hideError(queryContainer, item.errorEl);
