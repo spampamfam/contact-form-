@@ -349,3 +349,9 @@ h4 {
     opacity: 1;
   }
 }
+
+@media screen and (min-width: 1300px) {
+  .co {
+    width: 60%;
+  }
+}
